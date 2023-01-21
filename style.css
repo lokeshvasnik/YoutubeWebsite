@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sofia Sans', sans-serif;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    display: none;
+}
+::selection {
+    color: var(--pure);
+    background-color: var(--main-color);
+}
+
+:root {
+    --main-color: #1e1b1c;
+    --pure: #fff;
+    --secondary-color: #383738;
+}
+
+.primary_text {
+    font-size: 3.0625rem;
+}
+.secondary_text {
+    font-size: 1.0625rem;
+    text-align: left;
+}
+
+h1 {
+    font-size: 4rem !important;
+}
+
+.hidden {
+    transition: 900ms ease-in-out;
+    opacity: 0;
+    filter: blur(1px);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0px);
+}
+
+.hide {
+    display: none;
+}
+
+.cup {
+    animation: rotation 16s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Hamburger Css */
+.hamburger {
+    width: 30px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.bar {
+    width: 100%;
+    height: 3px;
+    background: #000;
+    transition: all 0.3s ease;
+}
+
+.hamburger.open .bar:first-child {
+    transform: rotate(45deg) translate(9px, 5px);
+}
+
+.hamburger.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open .bar:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+/* Code for next video */
+.cardBox {
+    border: none;
+    background: #2d2c2d;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    color: var(--pure);
+    cursor: pointer;
+    margin: 20px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.cardBox:hover {
+    translate: 0px -11px;
+    transition: all 0.3s ease-in-out;
+}
+
+.card__img {
+    width: 126px;
+    height: 126px;
+}
+
+#second__section {
+    width: 100%;
+    background: linear-gradient(
+        to top,
+        #383738 0%,
+        #383738 50%,
+        #2a2a2a 50%,
+        #2a2a2a 100%
+    );
+}
+
+/* Card */
+.card {
+    background-color: #2b2a2a !important;
+    color: var(--pure);
+    padding: 20px;
+    width: 100%;
+}
+
+/* Section 4 */
+#forth__section {
+    background-color: #2a2a2a;
+}
+input {
+    background: #ffffff;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 12px;
+    margin: 12px 0 !important;
+    outline: none;
+    width: 100%;
+}
+/* Button */
+button {
+    background: #1e1b1c;
+    outline: none;
+    border: none;
+    padding: 12px;
+    color: var(--pure);
+}
+button:hover {
+    background: #403e3f;
+}
+.contact__form {
+    border-radius: 11px;
+    height: 500px;
+    width: 700px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: var(--pure);
+}
+
+#fifth__section {
+    background-color: #1e1b1c;
+    color: var(--pure);
+}
+
+/* Media Query */
+
+@media (max-width: 575.98px) {
+    .media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
